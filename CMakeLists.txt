@@ -1302,6 +1302,7 @@ else()
         "${OpenAL_BINARY_DIR}/version.h")
 endif()
 
+option(ALSOFT_LIKELY_UNLIKELY "Use attributes likely/unlikely" ON)
 
 option(ALSOFT_EMBED_HRTF_DATA "Embed the HRTF data files (increases library footprint)" ON)
 if(ALSOFT_EMBED_HRTF_DATA)

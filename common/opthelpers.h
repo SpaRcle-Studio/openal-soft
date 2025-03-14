@@ -66,7 +66,7 @@
 /* This shouldn't be needed since unknown attributes are ignored, but older
  * versions of GCC choke on the attribute syntax in certain situations.
  */
-#if HAS_ATTRIBUTE(likely)
+#if HAS_ATTRIBUTE(likely) && defined(ALSOFT_LIKELY_UNLIKELY)
 #define LIKELY [[likely]]
 #define UNLIKELY [[unlikely]]
 #else

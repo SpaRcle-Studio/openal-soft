@@ -7,6 +7,9 @@
 /* Define if we have the proc_pidpath function */
 #cmakedefine HAVE_PROC_PIDPATH
 
+/* Define if we use attributes likely/unlikely */
+#cmakedefine ALSOFT_LIKELY_UNLIKELY
+
 /* Define if we have dlfcn.h */
 #cmakedefine HAVE_DLFCN_H
 
