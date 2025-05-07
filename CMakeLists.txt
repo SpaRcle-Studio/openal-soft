@@ -1556,6 +1556,10 @@ else()
     endif()
 endif()
 
+if (UNIX)
+    target_compile_options(${IMPL_TARGET} PRIVATE -fPIC)
+endif()
+
 target_include_directories(${IMPL_TARGET}
   PUBLIC
     $<BUILD_INTERFACE:${OpenAL_SOURCE_DIR}/include>
